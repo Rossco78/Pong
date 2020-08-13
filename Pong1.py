@@ -4,6 +4,7 @@ import os
 wn = turtle.Screen()
 wn.title("Pong by Rossco")
 wn.bgcolor("aqua")
+wn.bgpic('alienvspredator.gif')
 wn.setup(width=800, height=600)
 wn.tracer(0)
 
@@ -33,7 +34,7 @@ paddle_b.goto(+350, 0)
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape("square")
-ball.color('violet')
+ball.color('white')
 ball.penup()
 ball.goto(0, 0)
 ball.dx = 1
@@ -42,11 +43,11 @@ ball.dy = 1
 # Pen
 pen = turtle.Turtle()
 pen.speed(0)
-pen.color('purple')
+pen.color('red')
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("Alien: 0 vs Predator: 0", align='center', font=('Courier', 24, 'normal'))
+pen.write("Alien: 0 vs Predator: 0", align='center', font=('Marconi', 24, 'normal'))
 
 # Functions
 def paddle_a_up():
